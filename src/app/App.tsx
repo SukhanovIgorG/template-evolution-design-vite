@@ -1,11 +1,8 @@
-import { Header } from "@/features/header";
-
 const App = () => {
   return (
-    <>
-      <div>Hi</div>
-      <Header />
-    </>
+    <div>
+      <h1>Welcome to evolution design template</h1>
+    </div>
   );
 };
 
