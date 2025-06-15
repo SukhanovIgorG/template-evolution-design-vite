@@ -1,5 +1,5 @@
-import { ROUTES } from "@/shared/model/routes";
-import { redirect } from "react-router-dom";
+import { ROUTES } from '@/shared/model/routes';
+import { redirect } from 'react-router-dom';
 
 export async function protectedLoader() {
   const token = null;
