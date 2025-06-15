@@ -6,11 +6,15 @@ import { ROUTES } from '../shared/model/routes';
 import App from './App';
 import { protectedLoader } from './protected-loader';
 import { ProtectedRoute } from './protected-route';
+import { Providers } from './providers';
 
 export const router = createBrowserRouter([
   {
-    path: '/',
-    element: <App />,
+    element: (
+      <Providers>
+        <App />
+      </Providers>
+    ),
     children: [
       {
         loader: protectedLoader,
